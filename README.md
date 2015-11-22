@@ -1,2 +1,2 @@
 # PracticeProject
-Program implementation of common problems
+Program implementation of common problems.

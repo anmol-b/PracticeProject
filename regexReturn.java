@@ -26,10 +26,10 @@ public class regexReturn {
             temp = "";
             temp += a.charAt(i);
             if(i!= 0){
-                if(!temp.matches(regex+"]")){
+                if(temp.matches(regex+"]")){
                     regex += "(" + a.charAt(i) + ")*";
                 }
-            }else{
+            }else if(i == 0){
                 regex += "(" + a.charAt(i) + ")*";
             }
         }

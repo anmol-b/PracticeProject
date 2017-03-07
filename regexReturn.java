@@ -25,7 +25,11 @@ public class regexReturn {
         for(int i = 0; i<a.length(); i++){
             temp = "";
             temp += a.charAt(i);
-            if(!regex.contains(temp)){
+            if(i!= 0){
+                if(!temp.matches(regex+"]")){
+                    regex += "(" + a.charAt(i) + ")*";
+                }
+            }else{
                 regex += "(" + a.charAt(i) + ")*";
             }
         }

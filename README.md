@@ -2,6 +2,8 @@
 Program implementation of common problems.
 ====================================
 
+**DirectoryCheck.java**
+A simple telephone directory. Add entries to a file after successful check for formats using Regular Expressions.
 **ConcentricSquare.java**
 prints concentric squares of odd side lengths starting from 1 and incrementing by multiples of 4.
 

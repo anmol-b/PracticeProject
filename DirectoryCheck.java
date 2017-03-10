@@ -244,7 +244,7 @@ public class DirectoryCheck {
             obj.input = scanner.nextLine().trim();
             obj.command = obj.input.split(" ")[0];
             obj.input = obj.input.substring(obj.input.lastIndexOf(obj.command) + obj.command.length());
-            //System.out.print("post command text : " + obj.input + " : " + obj.telNumStrtIndex);
+            
             if(!obj.input.equals("")) {
                 for (int i = 0; i < obj.input.length(); i++) {
                     if (obj.input.charAt(i) == ' ') {
@@ -255,12 +255,10 @@ public class DirectoryCheck {
                         }
                     }
                 }
-                //System.out.print("post command text : " + obj.input + " : " + obj.telNumStrtIndex);
+                
                 if (obj.telNumStrtIndex != 0) {
                     obj.number = obj.input.substring(obj.telNumStrtIndex + 1, obj.input.length()).trim();
                     obj.name = obj.input.substring(1, obj.telNumStrtIndex).trim();
-
-                    System.out.print(obj.name + " -------  " + obj.number + "\n");
                 } else if (obj.command.equals("DEL")){
                     if(obj.isNumber){
                         obj.number = obj.input.trim();
